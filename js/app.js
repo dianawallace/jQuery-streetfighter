@@ -5,6 +5,7 @@
     }) 
     
     .mouseleave(function() {
-      alert("mouse left");
+     $(".ryu-ready").hide();
+     $(".ryu-still").show();
     });
 });
