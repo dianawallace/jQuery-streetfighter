@@ -27,11 +27,23 @@
         $("ryu.throwing").hide();
         $("ryu.ready").show();
     });
+    
 });
+
+$(".ryu-ready").on("keydown", function(e){
+   var code = e.keyCode;
+    if(code == 88){
+     $("X Pressed")("ryu-cool").show();
+     $("x Pressed")("ryu-ready").hide();
+    }
+})
+
+
 
 function playHadouken() {
     $("#hadouken-sound")[0].volume = 0.5;
     $("#hadouken-sound")[0].load();
     $("#hadouken-sound")[0].play();
-    
 }
+
+ 
